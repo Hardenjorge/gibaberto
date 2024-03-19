@@ -61,7 +61,7 @@ body{
     }
 
 .ativo{
-background-color: var(#042838);
+background-color: var(cor-cbc-n-sel);
 border-bottom: 4px solid var(--cor-de-fundo);
 }    
 
