@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-
-:root {
-    --cor-de-fundo:#4169E1;
-    --preto:#836FFF;
-    --vermelho:#483D8B;
-    --roxo:#3A375E;
-    --verde-limao:#6FFF57;
-    --cor-cbc-n-sel:#191970;
-    --cor-cbc-sel:#ADD8E6;
-} 
-
+root{
+    --cor-de-fundo:#ffe58f;
+    --cor-texto:#000000;
+    --cor-ativa:#ffee01;
+    --cor-inativo:#3A375E;
+    --cor-aba:#fffd7c;
+    --cor-borda:#e2c231;
+    --cor-ativado:#000000;
+}
 body{
     background-color: var(--cor-de-fundo);
-    color: #FFFF;
-    font-family: 'Chakra Petch', sans-serif;
-}
-
-.conteudo-principal {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,56 +22,49 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-
+.titulo-principal span{
+    color: var(--cor-aba);
+}
 .titulo-principal{
     text-align: left;
     width: 100%;
     font-size: 32px;
-}
-
-.titulo-principal span{
-    color: var(--verde-limao);
-}
-
+    
+    }
 .botao{
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--cor-cbc-n-sel);
-    color: #FFFF;
+    font-family: "Archivo Black", sans-serif;
+    background-color: var(--cor-borda);
+    color:var(--cor-texto);
     display: flex;
     justify-content: center;
     padding: 1em;
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--cor-cbc-sel);
-    border-left: 2px solid var(--cor-cbc-sel);
-    border-right: 2px solid var(--cor-cbc-sel);
+    border-bottom: 4px solid var(--cor-ativa);
+    border-left: 2px solid var(--cor-ativa);
+    border-right: 2px solid var(--cor-ativa);
     border-top: none;
-    }
-   
+    
+}
 .botao:first-child{
-    border-radius: 40px 40px 0 0
-    }
-
-    .botoes{
-    display: block;
-    }
-
+    border-radius: 40px 40px 0 0;
+}
+.botoes{
+    display: flex;
+}
 .ativo{
-background-color: var(cor-cbc-n-sel);
-border-bottom: 4px solid var(--cor-de-fundo);
-}    
-
+    background-color: var(--cor-ativa);
+    border-bottom: 4px solid var(--cor-ativado);
+}
 @media screen and (min-width: 768px) {
     .botoes{
-    display: flex;
+        display: flex;
     }
-
-.botao:first-child{
-    border-radius: 40px 0 0 0
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
     }
-    
-.botao:last-child{
-    border-radius: 0 40px 0 0;
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
     }
 }
