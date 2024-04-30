@@ -41,7 +41,10 @@ body{
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--cor-texto);
 }
-
+.contador{
+  text-align: center;
+  font-size: 20px;
+}
 @media screen and (min-width: 768px){
   .botoes{
     display: flex;
